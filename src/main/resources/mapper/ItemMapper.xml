@@ -16,6 +16,10 @@
         where id = #{id}
     </update>
 
+    <sql id="find">
+        select id, item_name, price, quantity
+        from item
+    </sql>
     <select id="findById" resultType="Item">
         select id, item_name, price, quantity
         from item
